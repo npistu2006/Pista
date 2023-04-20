@@ -1,2 +1,2 @@
-Norbi kutyus 
+kurva anyád
 
