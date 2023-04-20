@@ -1,2 +1,1 @@
-Norbi kutyus 
-Amúgy a norbi csicska
+kurva anyátok
