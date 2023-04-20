@@ -1,1 +1,1 @@
-kurva anyátok
+kurva anyád(tok)
