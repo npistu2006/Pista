@@ -1,1 +1,1 @@
-fasz
+kuss egy picit
