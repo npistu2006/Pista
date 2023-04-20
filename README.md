@@ -1,1 +1,1 @@
-kurva anyád(tok)
+fasz
