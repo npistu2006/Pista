@@ -1,0 +1,60 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.hkep{
+	width: 100%;
+	height: 480px;
+	display: block;
+	
+}
+li{
+	float: left;
+}
+li a{
+	display: block;
+  	color: white;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+}
+li a:hover {
+	background-color: #111;
+  }
+ul{
+	list-style-type: none;
+ 	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+  	background-color: #333;
+}
+.card{
+	width: 35rem;
+	height: 50rem;
+	margin: 3rem 5rem;
+	padding: 1.5rem;
+	background-color: white;
+	text-align: justify;
+}
+.kartyak{
+	background-color: #fefbd8;
+}
+.film{
+	background-color: coral;
+}
+.text{
+	margin: 1rem 3rem;
+}
+#kep{
+	height: 20rem;
+	margin-top: 2rem;
+}
+.stáb{
+	margin: 2rem 0 2rem 5rem;
+	padding: .5rem;
+	align-items: center;
+}
+#kep2{
+	height: 20rem;
+}
