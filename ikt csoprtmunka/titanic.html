@@ -5,26 +5,28 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/Titanic.css">
+	<link rel="stylesheet" href="js/Titanic.js">
+	<link rel="icon" type="image/x-icon" href="./img/logoo.jpg">
 	<title>Titanic története, film</title>
 </head>
 <body>
-<header>
-	<div id="carouselExampleCaptions" class="carousel slide">
+<header id="fel">
+		<div id="carouselExampleCaptions" class="carousel slide">
 		<div class="carousel-indicators">
 		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
 		</div>
 		<div class="carousel-inner">
 		  <div class="carousel-item active">
-			<img src="/img/Titanic épp.webp" class="hkep" alt="Az épp Titanic">
+			<img src="./img/Titanic épp.webp" class="hkep" alt="Az épp Titanic">
 			<div class="carousel-caption d-none d-md-block">
 			  <h1 >A Titanic ahogy elindult</h1>
-			  <p style="font-size: large;">A hajó 1912. április 12-én indult el New York felé..</p>
+			  <p style="font-size: large;">A hajó 1912. április 12-én indult el New York felé.</p>
 			</div>
 		  </div>
 		  <div class="carousel-item">
-			<img src="/img/titanic roncs.jpg" class="hkep" alt="A süllyedő Titanic">
+			<img src="./img/titanic roncs.jpg" class="hkep" alt="A süllyedő Titanic">
 			<div class="carousel-caption d-none d-md-block">
 			  <h1 >A Titanic ahogy éppen süllyed</h1>
 			  <p style="font-size: large;">Április 15-én 2:20-kor a Titanic elsüllyedt</p>
@@ -58,59 +60,68 @@
 		<li>
 			<a href="#film">Film</a>
 		</li>
+		<li>
+			<a href="#kviz">Kvíz</a>
+		</li>
+		<li>
+			<a href="https://hu.wikipedia.org/wiki/Titanic_(film,_1997)#A_film_k%C3%A9sz%C3%ADt%C3%A9se" target="_blank">Forrás innen!</a>
+		</li>
 	</ul>
 </nav>
 <main>
-	<div class="kartyak">
-		<div class="row">
-			<div class="col-12 col-md-6 ">
-				<div class="card" id="törtenete">
-					<img src="./img/titanictörtenete.jpg" class="card-img-top" alt="Titanic">
-					<div class="card-body">
-					<h5 class="card-title">Története</h5>
-					<p class="card-text">A Titanicot egy óceánjáró hármas második hajójaként tervezték „testvérhajóival” heti három járat kiszolgálására és a transzatlanti forgalom dominálására, a White Star Line társaság számára.A hajót a Harland and Wolff hajógyárban építették az észak-írországi Belfastban. Első útján (az angliai Southamptonból a franciaországi Cherbourg-ba, onnan az írországi Queenstownba, és végül az Egyesült Államokba, New York Citybe), 1912. április 14-én, vasárnap 23:40-kor a hajó jéghegynek ütközött, és április 15-én, hétfőn 2:20-kor, az ütközés után alig több mint két és fél órával, kettétörve elsüllyedt.</p>
+	<div class="wrapper">
+		<div class="kartyak">
+			<div class="row">
+				<div class="col-12 col-md-6 ">
+					<div class="card" id="törtenete">
+						<img src="./img/titanictörtenete.jpg" class="card-img-top" alt="Titanic">
+						<div class="card-body">
+						<h5 class="card-title">Története</h5>
+						<p class="card-text">A Titanicot egy óceánjáró hármas második hajójaként tervezték „testvérhajóival” heti három járat kiszolgálására és a transzatlanti forgalom dominálására, a White Star Line társaság számára.A hajót a Harland and Wolff hajógyárban építették az észak-írországi Belfastban. Első útján (az angliai Southamptonból a franciaországi Cherbourg-ba, onnan az írországi Queenstownba, és végül az Egyesült Államokba, New York Citybe), 1912. április 14-én, vasárnap 23:40-kor a hajó jéghegynek ütközött, és április 15-én, hétfőn 2:20-kor, az ütközés után alig több mint két és fél órával, kettétörve elsüllyedt.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6">
+					<div class="card" id="aldozatok">
+						<img src="./img/kapitany1.jpg" class="card-img-top" alt="Kapitány">
+						<div class="card-body">
+						<h5 class="card-title">Áldozatok</h5>
+						<p class="card-text">Az áldozatok pontos száma vitatott. A különböző szakértői csoportok és vizsgálóbizottságok eltérő adatokat szolgáltattak. Az amerikai kongresszusi vizsgálóbizottság szerint például ez a szám 1517, míg a britek vizsgálóbizottsága az 1490-es szám mellett foglalt állást, a Brit Kereskedelmi Kamara szerint pedig 1503 lehetett az elhunytak száma.A legtöbb áldozat a legénységből került ki (688 fő). Köztük volt maga Edward John Smith kapitány, és az utána következő két legmagasabb rangú tiszt (Henry T. Wilde legfőbb és William Murdoch első tiszt), valamint a legalacsonyabb rangú James Moody hatodik tiszt is. A rádiósszoba első embere, Jack Philips sem élte túl a szerencsétlenséget, mint ahogy a két orvos, dr. O'Loughlin és helyettese, dr. John Edward Simpson sem.A legkevesebb áldozat az elsőosztályú utasok közül került ki (121 fő). Itt a legillusztrisabbak közé tartozott Thomas Andrews, a hajó mérnöke. A másodosztályról 162 ember veszett oda, köztük Thomas Byles tiszteletes.Az utasok közül a harmadosztályon (fedélközi) utazók közül haltak meg a legtöbben (533 fő).
+						</p>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-12 col-md-6">
-				<div class="card" id="aldozatok">
-					<img src="./img/kapitany1.jpg" class="card-img-top" alt="Kapitány">
-					<div class="card-body">
-					<h5 class="card-title">Áldozatok</h5>
-					<p class="card-text">Az áldozatok pontos száma vitatott. A különböző szakértői csoportok és vizsgálóbizottságok eltérő adatokat szolgáltattak. Az amerikai kongresszusi vizsgálóbizottság szerint például ez a szám 1517, míg a britek vizsgálóbizottsága az 1490-es szám mellett foglalt állást, a Brit Kereskedelmi Kamara szerint pedig 1503 lehetett az elhunytak száma.A legtöbb áldozat a legénységből került ki (688 fő). Köztük volt maga Edward John Smith kapitány, és az utána következő két legmagasabb rangú tiszt (Henry T. Wilde legfőbb és William Murdoch első tiszt), valamint a legalacsonyabb rangú James Moody hatodik tiszt is. A rádiósszoba első embere, Jack Philips sem élte túl a szerencsétlenséget, mint ahogy a két orvos, dr. O'Loughlin és helyettese, dr. John Edward Simpson sem.A legkevesebb áldozat az elsőosztályú utasok közül került ki (121 fő). Itt a legillusztrisabbak közé tartozott Thomas Andrews, a hajó mérnöke. A másodosztályról 162 ember veszett oda, köztük Thomas Byles tiszteletes.Az utasok közül a harmadosztályon (fedélközi) utazók közül haltak meg a legtöbben (533 fő).
-					</p>
+			<div class="row">
+				<div class="col-12 col-md-6">
+					<div class="card" id="roncs">
+						<img src="./img/roncs1.jpg" class="card-img-top" alt="Roncs">
+						<div class="card-body">
+						<h5 class="card-title">A roncs utóéletre</h5>
+						<p class="card-text">A Titanicot egy óceánjáró hármas második hajójaként tervezték „testvérhajóival” heti három járat kiszolgálására és a transzatlanti forgalom dominálására, a White Star Line társaság számára.A hajót a Harland and Wolff hajógyárban építették az észak-írországi Belfastban. Első útján (az angliai Southamptonból a franciaországi Cherbourg-ba, onnan az írországi Queenstownba, és végül az Egyesült Államokba, New York Citybe), 1912. április 14-én, vasárnap 23:40-kor a hajó jéghegynek ütközött, és április 15-én, hétfőn 2:20-kor, az ütközés után alig több mint két és fél órával, kettétörve elsüllyedt.</p>
+						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-12 col-md-6">
-				<div class="card" id="roncs">
-					<img src="./img/roncs1.jpg" class="card-img-top" alt="Roncs">
-					<div class="card-body">
-					<h5 class="card-title">A roncs utóéletre</h5>
-					<p class="card-text">A Titanicot egy óceánjáró hármas második hajójaként tervezték „testvérhajóival” heti három járat kiszolgálására és a transzatlanti forgalom dominálására, a White Star Line társaság számára.A hajót a Harland and Wolff hajógyárban építették az észak-írországi Belfastban. Első útján (az angliai Southamptonból a franciaországi Cherbourg-ba, onnan az írországi Queenstownba, és végül az Egyesült Államokba, New York Citybe), 1912. április 14-én, vasárnap 23:40-kor a hajó jéghegynek ütközött, és április 15-én, hétfőn 2:20-kor, az ütközés után alig több mint két és fél órával, kettétörve elsüllyedt.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-12 col-md-6">
-				<div class="card" id="erdekesseg">
-					<img src="./img/erdekesseg1.jpg" class="card-img-top" alt="Érdekesség">
-					<div class="card-body">
-					<h5 class="card-title">Érdekesség</h5>
-					<p class="card-text">1898-ban jelent meg Morgan Robertson A Titan végzete című regénye, amely szinte próféciája volt a Titanic balesetének. Több adat kísértetiesen hasonlatos a regénybeli és a valóságos hajó, valamint a lejátszódott események között. Robertson az óriási óceánjáróját a következőképp jellemezte: Ez a legnagyobb hajó, és a legcsodálatosabb emberi alkotás. A regényben a hajó végül egy hűvös áprilisi éjszakán beleütközött egy jéghegybe és el is süllyedt.Már maga a két hajó elnevezése is hasonlít, ugyanis a regénybeli hajót Robertson Titannak keresztelte. Mindkettő a világ akkori legnagyobb hajója volt, mindkettőt egyformán elsüllyeszthetetlennek hitték, és egyiken sem volt elegendő számú mentőcsónak az utasok, illetve a legénység megmentésére.
-					</p>
+				<div class="col-12 col-md-6">
+					<div class="card" id="erdekesseg">
+						<img src="./img/erdekesseg1.jpg" class="card-img-top" alt="Érdekesség">
+						<div class="card-body">
+						<h5 class="card-title">Érdekesség</h5>
+						<p class="card-text">1898-ban jelent meg Morgan Robertson A Titan végzete című regénye, amely szinte próféciája volt a Titanic balesetének. Több adat kísértetiesen hasonlatos a regénybeli és a valóságos hajó, valamint a lejátszódott események között. Robertson az óriási óceánjáróját a következőképp jellemezte: Ez a legnagyobb hajó, és a legcsodálatosabb emberi alkotás. A regényben a hajó végül egy hűvös áprilisi éjszakán beleütközött egy jéghegybe és el is süllyedt.Már maga a két hajó elnevezése is hasonlít, ugyanis a regénybeli hajót Robertson Titannak keresztelte. Mindkettő a világ akkori legnagyobb hajója volt, mindkettőt egyformán elsüllyeszthetetlennek hitték, és egyiken sem volt elegendő számú mentőcsónak az utasok, illetve a legénység megmentésére.
+						</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
 	
 	<div class="film" id="film">
-		<nav2>
+		<nav>
 			<ul>
 				<li>
-					<a href="film1">Titanic (film, 1997)</a>
+					<a href="#film1">Titanic (film, 1997)</a>
 				</li>
 				<li>
 					<a href="#cselekmeny">Cselekmény</a>
@@ -125,10 +136,7 @@
 					<a href="#forgatas">A forgatás</a>
 				</li>
 				<li>
-					<a href="#zene">Filmzenealbum</a>
-				</li>
-				<li>
-					<a href="dij">Fontosabb díjak, jelölések</a>
+					<a href="https://www.youtube.com/watch?v=X2RIf9QrQ6k&ab_channel=FilmsFullOST" target="_blank">Soundtrack</a>
 				</li>
 			</ul>
 		</nav>
@@ -149,9 +157,9 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-12">
+			<div class="col-9">
 				<div class="text">
-					<h1>Cselekmény</h1>
+					<h1 id="cselekmeny">Cselekmény</h1>
 					<p>
 						1996-ban a kincsvadász Brock Lovett (Bill Paxton) és csapata a RMS Titanic roncsai közt kutat az Óceán Szíve nevű, rendkívül értékes kék gyémánt után. A gyémántot nem találják meg, csupán egy rajzot, mely egy meztelen nőt ábrázol nyakában az ékszerrel. A rajzon lévő dátum arról tanúskodik, hogy a mű a Titanic elsüllyedésének napján készült. A 101 éves Rose Dawson Calvert tudomást szerez a rajzról, és elmondja Lovettnek, hogy a kép őt ábrázolja. Unokájával, Elizabeth (Lizzy) Calverttel (Suzy Amis) meglátogatja Lovettet és kissé szkeptikus csapatát a hajójukon, ahol természetesen rögvest a gyémánt hollétéről kérdezik. Válaszul az idős Rose egy megrázó történetet mesél el, melyből kiderül, hogy ő nem más, mint Rose DeWitt Bukater, akiről mindenki azt hitte, hogy életét vesztette a katasztrófában.
 					</p>
@@ -162,39 +170,144 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-12 col-md-9" id="szereplok" class="stáb">
-				<h1>Stáblista</h1>
-				<p>
-					Rendező: James Cameron <br>
-					Forgatókönyvíró: James Cameron <br>
-					Főszerepben: <br>
-					Leonardo DiCaprio<br>
-					Kate Winslet<br>
-					Billy Zane<br>
-					Kathy Bates<br>
-					Frances Fisher<br>
-					Gloria Stuart<br>
-					Bill Paxton<br>
-					Zene: James Horner <br>
-					Operatőr: Russell Carpenter <br>	
-					Vágó: <br>
-					Conrad Buff IV<br>
-					James Cameron<br>
-					Richard A. Harris<br>
-					Jelmeztervező: Deborah Lynn Scott <br>
-					Díszlettervező: Peter Lamont <br>
-				</p>
+			<div class="col-12 col-md-8 stabl" id="stablista">
+				<h1 class="stab">Stáblista</h1>
+				<table>
+					<tr>
+					  <th>Szereplő</th>
+					  <th>Színész</th>
+					  <th>Magyar hang</th>
+					</tr>
+					<tr>
+					  <td>Jack Dawson</td>
+					  <td>Leonardo DiCaprio</td>
+					  <td>Hevér Gábor</td>
+					</tr>
+					<tr>
+					  <td>Rose DeWitt Bukater</td>
+					  <td>Kate Winslet</td>
+					  <td>Major Melinda</td>
+					</tr>
+					<tr>
+					  <td>Caledon Hockley</td>
+					  <td>Billy Zane</td>
+					  <td>Tóth Sándor</td>
+					</tr>
+					<tr>
+					  <td>Molly Brown</td>
+					  <td>Kathy Bates</td>
+					  <td>Milnár piroska</td>
+					</tr>
+					<tr>
+					  <td>Ruth DeWitt Bukater</td>
+					  <td>Frances Fisher</td>
+					  <td>Hámori Ildikó</td>
+					</tr>
+					<tr>
+					  <td>Edward J. Smith</td>
+					  <td>Bernard Hill</td>
+					  <td>Bitskey Tibor</td>
+					</tr>
+					<tr>
+						<td>J. Bruce Ismay</td>
+						<td>Jonathan Hyde</td>
+						<td>Melis Gábor</td>
+					</tr>
+					<tr>
+						<td>Fabrizio DeRossi</td>
+						<td>Danny Nucci</td>
+						<td>Bartucz Attila</td>
+					</tr>
+					<tr>
+						<td>Idős Rose</td>
+						<td>Gloria Stuart</td>
+						<td>Tolnay Klári</td>
+					</tr>
+					<tr>
+						<td>Spicer Lovejoy</td>
+						<td>David Wamer</td>
+						<td>Kárpáti Tibor</td>
+					</tr>
+					<tr>
+						<td>Thomas Andrews</td>
+						<td>Victor Garber</td>
+						<td>Várkonyi András</td>
+					</tr>
+					<tr>
+						<td>Brock Lovett</td>
+						<td>Bill Paxton</td>
+						<td>Rubold Ödön</td>
+					</tr>
+					<tr>
+						<td>Lizzy Calvert</td>
+						<td>Suzy Amis</td>
+						<td>Kisfalvi Krisztina</td>
+					</tr>
+				  </table>
 			</div>
-			<div class="col-12 col-md-3">
+
+			<div class="col-12 col-md-4">
 				<img src="./img/poszter.png" alt="poszter" id="kep2">
 			</div>
 		</div>
-	
+		<div class="row">
+			<div class="col-12 col-md-8 text">
+				<h1 id="keszites">A film készítése</h1>
+				<p>
+					James Cameron rajongója volt a hajóroncsoknak, köztük a Titanicénak is, és el is készítette egy lehetséges film forgatókönyvének vázlatát. A hajó elsüllyedéséről azt mondta, „olyan, mint egy nagyszerű regény, ami tényleg megtörtént". Az idő múlásával azonban egyre inkább úgy érezte, az erkölcsi mondanivaló fontosabb, és a film elkészítésével a közönséget az élő történelemmel kívánta szembesíteni. A rendező a szerelmi szálat egy történet leginkább lebilincselő részeként jellemezte. Jack és Rose szerelme, majd ennek tragikus vége megérteti a nézőközönséggel a tragédia súlyát. Cameron a románc történetét modern keretbe foglalta az idős Rose szerepeltetésével, hogy ezáltal még inkább kézzelfoghatóvá és szívbe markolóbbá tegye elbeszélését. A kincsvadász Brock Lovett azokat szimbolizálja, akik sohasem voltak képesek emberi közelségből szemlélni a katasztrófát. A rendező filmjével az elhunytak előtt kívánt tisztelegni, s hat hónapot töltött a tragédia pontos körülményeinek kutatásával.
+				</p>
+				<p>
+					Felkereste a 20th Century Fox filmstúdiót, és, a hajóroncsról készített felvételek népszerűségére apellálva meggyőzte őket a filmjéről. Meg is szervezte a merülést a Titanichoz az Akagyemik Msztyiszlav Keldis nevű orosz kutatóhajó fedélzetéről, melynek kapitánya Anatolij Szagalevics volt. A stáb 1995-ben tizenkét alkalommal merült a tenger fenekére a roncshoz, ebből 11 alkalommal forgattak is, és végeredményben több időt töltöttek a Titanickal, mint az utasai. Cameron ezután megírta a forgatókönyvet. A Harland és Wolff hajógyár, mely a Titanicot építette, úgyszintén segítségére volt, és olyan tervrajzokat is megmutattak a rendezőnek, melyeket mindenki elveszettnek hitt. A hajó belső terének hiteles ábrázolásához Peter Lamont díszlettervező és csapata fáradhatatlanul kutattak a hajó korából származó eredeti (bútor)darabok után. A Fox a mexikói Playas de Rosarito-tól délre 160 ezer m2 földterületet vásárolt, és 1996. május 31-én elkezdte felépíteni az új stúdióját. Cameron rekonstruált hajója számára rendelkezésre állt egy 68 millió literes, hatalmas tartály, melyben a süllyedés jeleneteit felvették. A csónakfedélzetet és az A fedélzetet használták a forgatás során, a hajó többi része lényegében csak acélszerkezet volt, melyet a filmben digitális trükkökkel maszkíroztak el. (A mentőcsónakok és a kémények mérete 10%-kal kisebb volt, mint az eredeti.) 15 méter magas emelőszerkezettel döntötték meg a hajót a süllyedés bemutatásához. A kamerák és a reflektorok elhelyezéséhez rendelkezésre állt egy 49 méter magas torony, mely 180 méter hosszú sínen mozoghatott. (A süllyedés jeleneteinek felvétele után a hajót szétszedték, és darabjait eladták, hogy könnyebben fedezhessék a költségeket.) 
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-md-8 text">
+				<h1 id="forgatas">A forgatás</h1>
+				<p>A napjainkban játszódó jeleneteket az Akagyemik Msztyiszlav Keldis kutatóhajó fedélzetén vették fel. Itt történt, hogy valaki (sosem derült ki, hogy pontosan kicsoda) angyalport szórt a stáb ételébe, minek következtében több tucatnyian betegedtek meg (köztük maga Cameron), és kerültek kórházba.</p>
+					<p>A Titanicon játszódó jeleneteket 1996 szeptemberében kezdték forgatni a Fox vadonatúj stúdiójában. A hajó tatfedélzetét külön is megépítették, és különleges forgópántok segítségével pár másodperc alatt függőleges helyzetbe tudták fordítani. A kaszkadőrök biztonsága érdekében a kiálló elemek nagy részét habszivacsból készítették. Cameron a hajót annak jobb oldali része felől építette fel, ami a southamptoni indulás jeleneteinél némi nehézséget okozott, ugyanis ott a hajó a bal oldala felől volt kikötve. A díszleteken ezért a feliratokat tükörírással kellett írni, és a szereplőknek is fordítottan kellett mozogni (jobb helyett balra és fordítva). Az utómunkálatok során természetesen a helyes irányba fordították a képeket.</p>
+					
+					<p>Senki számára nem volt könnyű feladat a forgatás. Eredetileg 138 naposra tervezték, de végül 160 lett belőle - majdnem hat hónap. A stáb nagyon sok tagja megfázott, influenzás lett vagy húgyúti fertőzést kapott, miután órákat töltöttek a hideg vízben (Kate Winslet sem volt kivétel). Sokan ott is hagyták a forgatást, három kaszkadőr pedig csonttörést szenvedett. A Screen Actors Guild nevű szervezet azonban egy vizsgálatot követően azt állapította meg, hogy a biztonsági előírásokat nem szegték meg. Cameron soha nem kért elnézést azért, amiért úgy kezelte a stábját, mintha egy hadseregnek parancsolna feltétlen engedelmességet várva, de annyit elismert, hogy „sokat követelek, és természetesen sokat követelek a stábtól is. A hatalmas logisztikára, az emberek biztonságára és az ezernyi egyéb dologra csak ilyen katonás stílusban lehet kellőképpen odafigyelni. Úgy gondolom, korrekt és szigorú metodikára van szükség ahhoz, hogy ennyi embert kézben lehessen tartani.” Kate Winslet egyébként, miután majdnem vízbe fulladt, influenzás lett és egy csont elrepedt a könyökében, kijelentette, hogy soha többé nem hajlandó James Cameronnal dolgozni, „hacsak nem keres vele nagyon-nagyon sok pénzt.”</p>
+					 
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-md-8 text">
+				<div class="cardk">
+					<div class="card-body">
+					  <h3 class="card-title" id="kviz">Kvíz a Titanicról</h3>
+					  <h6 class="card-subtitle mb-2 text-body-secondary">Titanic kvíz</h6>
+					  <p class="card-text">
+						<form>
+							<h6>1.feladat: Főszereplők</h6>
+							<label for="fname">Főszereplő neve(férfi):</label><br>
+							<input type="text" id="fname" name="fname"><br>
+							<label for="lname">Főszereplő neve(nő):</label><br>
+							<input type="text" id="lname" name="lname"> <br><br>
+							
+							<!---->
+							<h6>2.feladat: Mikor került bemutatásra a film?</h6>
+							<input type="radio" id="elso" name="evszam" value="eslo">
+							<label for="elso" data-correct>1997</label><br>
+							<input type="radio" id="masodik" name="evszam" value="masodik">
+							<label for="masodik">1995</label><br>
+							<input type="radio" id="harmadik" name="evszam" value="harmadik">
+							<label for="harmadik">1999</label><br> <br>
+
+							<input type="button" value="Beküldés" class="but"> <br> <br>
+						  </form> 
+					  </p>
+					</div>
+				  </div>
+			</div>
+		</div>
 		
 	</div>
 
 </main>
-
+<footer>
+	<a href="#fel">Vissza a weboldal tetejére</a>
+</footer>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>	
