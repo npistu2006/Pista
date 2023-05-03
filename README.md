@@ -1,1 +1,1 @@
-kuss egy picit
+Szeretlek Norbi
